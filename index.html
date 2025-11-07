@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mithai Gali – Pure Joy in Every Bite</title>
+  <meta name="description" content="Fresh mithai, breakfast boxes & happiness delivered. Pre-order tonight for tomorrow’s breakfast!"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --gold: #D4A017;
+      --pink: #FF6F91;
+      --cream: #FFF8E7;
+      --dark: #2C1A0D;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--cream);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    .hero {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1606890653315-45d7c009e12b?auto=format&fit=crop&q=80') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 2rem;
+    }
+    .logo {
+      font-family: 'Dancing Script', cursive;
+      font-size: 4rem;
+      color: var(--gold);
+      text-shadow: 3px 3px 6px rgba(0,0,0,0.6);
+    }
+    .tagline { font-size: 1.4rem; margin: 1rem 0; }
+    .wa-btn {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      font-weight: 600;
+      font-size: 1.3rem;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      margin-top: 2rem;
+      box-shadow: 0 8px 20px rgba(37,211,102,0.4);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    section { padding: 4rem 1rem; text-align:center; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 2rem auto;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .card h3 { padding: 1rem; color: var(--pink); }
+    .card p { padding: 0 1rem 1.5rem; font-size: 0.95rem; }
+    .highlight {
+      background: var(--pink);
+      color: white;
+      padding: 2rem;
+      margin: 2rem 0;
+      border-radius: 16px;
+    }
+    footer {
+      background: var(--dark);
+      color: var(--cream);
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+    }
+    .menu-list {
+      text-align: left;
+      max-width: 600px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    .menu-list li {
+      padding: 0.7rem 0;
+      border-bottom: 1px dashed #ddd;
+    }
+    .menu-list li:last-child { border:none; }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div>
+      <h1 class="logo">Mithai Gali</h1>
+      <p class="tagline">Hand-crafted mithai & breakfast boxes made with love</p>
+      <p style="font-size:1.2rem;margin:1rem 0;">
+        Open 7 AM – 10 PM | Shop No. 12, MG Road, Pune
+      </p>
+      <a href="https://wa.me/919876543210?text=Hi%20Mithai%20Gali!%20I%20want%20to%20pre-order%20for%20tomorrow%20morning.%20Please%20share%20today's%20menu."
+         class="wa-btn" target="_blank">
+        📲 DM on WhatsApp to Order
+      </a>
+    </div>
+  </header>
+
+  <!-- PRE-ORDER CALL -->
+  <section class="highlight">
+    <h2>Pre-order Tonight → Fresh at 7 AM</h2>
+    <p style="font-size:1.2rem;margin-top:1rem;">
+      DM before 11 PM → Pick up or home delivery next morning
+    </p>
+  </section>
+
+  <!-- MENU -->
+  <section>
+    <h2 style="font-size:2rem;color:var(--pink);margin-bottom:1rem;">Today’s Menu</h2>
+    <div class="menu-list">
+      <ul>
+        <li><b>Kesar Peda</b> – ₹280/kg</li>
+        <li><b>Motichoor Ladoo</b> – ₹260/kg</li>
+        <li><b>Breakfast Box (4 pc)</b> – ₹149</li>
+        <li><b>Almond Katli</b> – ₹320/kg</li>
+        <li><b>Masala Milk (500 ml)</b> – ₹75</li>
+        <li><b>Gulab Jamun (6 pc)</b> – ₹120</li>
+      </ul>
+    </div>
+    <p>UPI, Cash & Card accepted</p>
+  </section>
+
+  <!-- GALLERY -->
+  <section>
+    <h2 style="font-size:2rem;color:var(--gold);">Freshly Made Every Day</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1622621711538-8fab96b85d09?auto=format&fit=crop&q=80" alt="Kesar Peda"/>
+        <h3>Kesar Peda</h3>
+        <p>Saffron-infused milk fudge</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&q=80" alt="Breakfast Box"/>
+        <h3>Breakfast Box</h3>
+        <p>2 Peda + 2 Ladoo + Masala Milk</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606891211205-f98bb5fea823?auto=format&fit=crop&q=80" alt="Gulab Jamun"/>
+        <h3>Gulab Jamun</h3>
+        <p>Soft, syrupy & irresistible</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- IDENTITY -->
+  <section class="highlight">
+    <h2>Our Promise</h2>
+    <p style="max-width:700px;margin:1.5rem auto;font-size:1.1rem;">
+      100 % vegetarian • Zero preservatives • Made in copper vessels • Happiness guaranteed
+    </p>
+    <p>Call <b>+91 98765 43210</b> for bulk orders & custom gifts</p>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section style="background:var(--dark);color:white;padding:4rem 1rem;">
+    <h2 style="font-size:2.5rem;">Ready for something sweet?</h2>
+    <a href="https://wa.me/919876543210?text=Hi!%20Send%20me%20today's%20full%20menu%20please."
+       class="wa-btn" style="font-size:1.5rem;padding:1.2rem 3rem;">
+      Tap to WhatsApp Now
+    </a>
+  </section>
+
+  <footer>
+    <p>Mithai Gali © 2025 • Shop 12, MG Road, Pune</p>
+    <p>Made with ❤️ for sweet lovers</p>
+  </footer>
+
+</body>
+  </html>
